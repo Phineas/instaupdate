@@ -1,0 +1,17 @@
+{
+  "name": "instaupdate",
+  "version": "0.0.1",
+  "author": {
+    "name": "Phineas",
+    "url": "https://phineas.io/"
+  },
+  "contributors": [
+    {
+      "name": "Hugmanrique",
+      "url": "https://hugmanrique.me"
+    }
+  ],
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
