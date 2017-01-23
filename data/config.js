@@ -14,5 +14,11 @@ module.exports = {
 		consumerSecret: '',
 		accessTokenKey: '',
 		accessTokenSecret: ''
+	}, // TODO Implement data for next services
+	youtube: {
+		enabled: false
+	},
+	reddit: {
+		enabled: false
 	}
 };
