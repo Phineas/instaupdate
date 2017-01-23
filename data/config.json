@@ -15,9 +15,14 @@
         "enabled": false
     },
     "youtube": {
-        "enabled": false
+        "enabled": false,
+        "refreshToken": "",
+        "clientID": "",
+        "clientSecret": ""
     },
     "reddit": {
-        "enabled": false
+        "enabled": false,
+        "username": "",
+        "password": ""
     }
 }
