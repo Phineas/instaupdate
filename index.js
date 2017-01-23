@@ -1,1 +1,1 @@
-module.exports = require('./lib/insta');
+module.exports = require('./lib/insta')();
