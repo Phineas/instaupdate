@@ -5,7 +5,7 @@ Update your name, location, URL, descriptions (bios), banners and much more on e
 ## Usage
 First, you will need to clone this repo using:
 
-```
+```shell
 git clone https://github.com/Phineas/instaupdate.git
 cd instaupdate
 ```
