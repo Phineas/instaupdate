@@ -1,5 +1,7 @@
+// TODO Add explanation
 // TODO Change to .json when node fixes the bug
 // More: https://twitter.com/itsphin/status/823241804187369473
+
 module.exports = {
 	github: {
 		enabled: false,
