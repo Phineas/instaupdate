@@ -1,6 +1,7 @@
 {
   "name": "instaupdate",
   "version": "0.0.1",
+  "license": "SEE LICENSE FILE",
   "author": {
     "name": "Phineas",
     "url": "https://phineas.io/"
@@ -11,6 +12,12 @@
       "url": "https://hugmanrique.me"
     }
   ],
+  "bugs": {
+    "url": "https://github.com/Phineas/instaupdate/issues"
+  },
+  "repository": {
+    "url": "https://github.com/Phineas/instaupdate"
+  },
   "dependencies": {
     "request": "^2.79.0"
   }
