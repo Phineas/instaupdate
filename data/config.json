@@ -1,7 +1,8 @@
 {
     "github": {
-        "enabled": false,
-        "oauth2Token": ""
+        "enabled": true,
+        "username": "",
+        "personalAccessToken": ""
     },
     "twitter": {
         "enabled": false,
