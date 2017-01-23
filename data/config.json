@@ -12,7 +12,9 @@
         "accessTokenSecret": ""
     },
     "gravatar": {
-        "enabled": false
+        "enabled": false,
+        "email": "",
+        "password": ""
     },
     "youtube": {
         "enabled": false,

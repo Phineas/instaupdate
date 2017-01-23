@@ -20,5 +20,4 @@ Once you are done, you can simply use ``node index.js`` and the script will do e
 
 - Change structures to ES6 classes
 - Use Promises
-- Implement Gravatar
 - Implement YouTube
