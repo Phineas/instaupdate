@@ -19,6 +19,5 @@ Once you are done, you can simply use ``node index.js`` and the script will do e
 ## TODOs
 
 - Change structures to ES6 classes
-- Fix global callback bug
 - Implement Gravatar
 - Implement YouTube
