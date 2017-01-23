@@ -1,23 +1,23 @@
 {
-	"github": {
-		"enabled": false,
-		"user": "",
-		"password": ""
-	},
-	"twitter": {
-		"enabled": false,
-		"consumerKey": "",
-		"consumerSecret": "",
-		"accessTokenKey": "",
-		"accessTokenSecret": ""
-	},
-	"gravatar": {
-		"enabled": false
-	},
-	"youtube": {
-		"enabled": false
-	},
-	"reddit": {
-		"enabled": false
-	}
+    "github": {
+        "enabled": false,
+        "user": "",
+        "password": ""
+    },
+    "twitter": {
+        "enabled": false,
+        "consumerKey": "",
+        "consumerSecret": "",
+        "accessTokenKey": "",
+        "accessTokenSecret": ""
+    },
+    "gravatar": {
+        "enabled": false
+    },
+    "youtube": {
+        "enabled": false
+    },
+    "reddit": {
+        "enabled": false
+    }
 }

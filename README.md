@@ -1,4 +1,5 @@
-# Instaupdate
+![Instaupdate logo](https://phineas.io/screenshots/instaupdate-logo.png)
+
 Update your name, location, URL, descriptions (bios), banners and much more on every website at once.
 
 ## Usage
