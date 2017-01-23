@@ -1,8 +1,9 @@
 {
-    "name": "",
-    "url": "",
+    "name": null,
+    "url": null,
     "location": null,
-    "description": "",
-    "profileColor": "#000",
-    "image": "cats.jpg"
+    "description": "My new bio...",
+    "profileColor": null,
+    "image": "cats.jpg",
+    "header": "kittens.jpg"
 }
