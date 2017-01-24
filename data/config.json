@@ -11,6 +11,10 @@
         "accessTokenKey": "",
         "accessTokenSecret": ""
     },
+    "discord": {
+        "clientID": "",
+        "clientSecret": ""
+    },
     "gravatar": {
         "enabled": false,
         "email": "",
