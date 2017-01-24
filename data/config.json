@@ -12,6 +12,7 @@
         "accessTokenSecret": ""
     },
     "discord": {
+        "enabled": false,
         "clientID": "",
         "clientSecret": ""
     },
