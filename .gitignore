@@ -40,3 +40,6 @@ jspm_packages
 *.iml
 
 yarn.lock
+
+# Ignore npm distribution folder
+distribution
