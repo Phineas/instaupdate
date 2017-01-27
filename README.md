@@ -3,6 +3,10 @@
 Update your name, location, URL, descriptions (bios), banners and much more on every website at once.
 
 ## Usage
+
+# DEPRECATED
+As this project now uses babel to compile, we will create a npm repo to publish the project. More details soon!
+
 First, you will need to clone this repo using:
 
 ```shell
