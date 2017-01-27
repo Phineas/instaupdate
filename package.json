@@ -24,9 +24,15 @@
     "request": "^2.79.0",
     "xmlrpc": "^1.3.2"
   },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0"
+  },
   "main": "./lib/insta.js",
   "scripts": {
-    "run": "node ./lib/insta.js"
+    "run": "node ./lib/insta.js",
+    "es6": "node ./lib/instaEs6.js",
+    "build": "babel lib --presets babel-preset-es2015 --out-dir distribution"
   },
   "engines": {
     "node": ">= 0.11.16"
