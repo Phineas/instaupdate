@@ -22,12 +22,14 @@ class Discord extends Service {
         if (!image) {
             return this._callback('No image provided!');
         }
+        
+        const data = {
+            avatar: image
+        };
 
         this.request.patch({
             url: baseUrl + 'users/{@me}'
-        }, {
-            avatar: image
-        }, super._handleRes);
+        }, data, super._handleRes);
     }
 }
 
