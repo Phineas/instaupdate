@@ -13,8 +13,10 @@
     },
     "discord": {
         "enabled": false,
-        "clientID": "",
-        "clientSecret": ""
+        "consumerKey": "",
+        "consumerSecret": "",
+        "accessTokenKey": "",
+        "accessTokenSecret": ""
     },
     "gravatar": {
         "enabled": false,
