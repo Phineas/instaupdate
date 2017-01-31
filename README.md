@@ -27,3 +27,7 @@ Once you are done, you can simply use ``node index.js`` and the script will do e
 - Change structures to ES6 classes
 - Use Promises
 - Implement YouTube
+- Implement Slack
+- Implement Facebook
+- Implement LinkedIn
+- Implement Trello
