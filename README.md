@@ -12,8 +12,8 @@ As this project now uses babel to compile, we will create a npm repo to publish 
 First, you will need to clone this repo using:
 
 ```shell
-git clone https://github.com/Phineas/instaupdate.git
-cd instaupdate
+$ git clone https://github.com/Phineas/instaupdate.git
+$ cd instaupdate
 ```
 
 Then, you need to change and add all the details of your accounts in the [config.json](data/config.json) file.
