@@ -28,10 +28,5 @@
         "refreshToken": "",
         "clientID": "",
         "clientSecret": ""
-    },
-    "reddit": {
-        "enabled": false,
-        "username": "",
-        "password": ""
     }
 }
