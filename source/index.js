@@ -1,1 +1,3 @@
-module.exports = require('./lib/insta')();
+import * as Insta from './lib/insta';
+
+new Insta();

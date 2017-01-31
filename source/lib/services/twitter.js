@@ -1,52 +1,60 @@
-const config = require('../../data/config.json').twitter;
+import {Service} from '../service';
 
-const resHandler = require('../resHandler');
-const request = require('../requestBuilder')({
-    oauth: {
-        consumer_key: config.consumerKey,
-        consumer_secret: config.consumerSecret,
-        token: config.accessTokenKey,
-        token_secret: config.accessTokenSecret
-    }
-});
+const baseUrl = 'https://api.twitter.com/1.1/account/';
 
-const baseUrl = 'https://api.twitter.com/1.1/';
+class Twitter extends Service {
+    buildRequest(builder) {
+        let config = this.config;
 
-exports.change = function (data, globalCb) {
-    let reach = data.image ? 2 : 1;
-    let count = 0;
-
-    const callback = function (err) {
-        if (err) {
-            count = 3;
-            return globalCb(err);
-        }
-
-        if (++count === reach && globalCb) {
-            globalCb();
-        }
-    };
-
-    request.post(baseUrl + 'account/update_profile.json', {
-        name: data.name,
-        url: data.url,
-        location: data.location,
-        description: data.description,
-        profile_link_color: data.profileColor
-    }, function (err, res, body) {
-        resHandler(callback, err, res, body, true);
-    });
-
-    if (!data.image) {
-        return;
+        this.request = builder({
+            oauth: {
+                consumer_key: config.consumerKey,
+                consumer_secret: config.consumerSecret,
+                token: config.accessTokenKey,
+                token_secret: config.accessTokenSecret
+            }
+        });
     }
 
-    // Change image
-    request.post(baseUrl + 'account/update_profile_image.json', {
-        image: data.image
-    }, function (err, res, body) {
-        resHandler(callback, err, res, body, true);
-    });
+    process() {
+        const data = this.profile;
+        
+        let reach = 1;
+        let count = 0;
+        
+        const callback = function (err, res, body) {
+            let invalid = super._invalidRes(err, res, body);
+            
+            if (invalid) {
+                count = 3;
+                return super._callback(err);
+            }
 
-    // TODO Change banner
-};
+            if (++count === reach) {
+                super._callback();
+            }
+        };
+
+        this.request.post(baseUrl + 'update_profile.json', {
+            name: data.name,
+            url: data.url,
+            location: data.location,
+            description: data.description,
+            profile_link_color: data.profileColor
+        }, callback);
+
+        if (data.image) {
+            reach++;
+            this._changeImage(callback, data.image);
+        }
+
+        // TODO Change banner
+    }
+    
+    _changeImage(callback, image) {
+        this.request.post(baseUrl + 'update_profile_image.json', {image}, callback);
+    }
+}
+
+
+export {Twitter as Class};

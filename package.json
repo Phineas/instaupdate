@@ -2,7 +2,7 @@
   "name": "instaupdate",
   "version": "0.0.1",
   "description": "Update locations, bios, websites & more on every website at once",
-  "license": "SEE LICENSE FILE",
+  "license": "MIT",
   "author": {
     "name": "Phineas",
     "url": "https://phineas.io/"
